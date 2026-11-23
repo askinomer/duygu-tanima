@@ -1,0 +1,8 @@
+Dalga biçimleri ve log-Mel özellikleri yükleniyor...
+Hazır: 1975 kayıt. Eğitim başlıyor.
+[baseline_bilstm_aug ravdess8_spk kat 0] 55 epoch, 978.3 sn | ravdess: UAR=0.641 ravdess_snr10: UAR=0.520 ravdess_snr0: UAR=0.375
+[baseline_bilstm_aug ravdess8_spk kat 1] 52 epoch, 930.6 sn | ravdess: UAR=0.594 ravdess_snr10: UAR=0.605 ravdess_snr0: UAR=0.477
+[baseline_bilstm_aug ravdess8_spk kat 2] 44 epoch, 805.9 sn | ravdess: UAR=0.406 ravdess_snr10: UAR=0.363 ravdess_snr0: UAR=0.301
+[baseline_bilstm_aug ravdess8_spk kat 3] 60 epoch, 1077.7 sn | ravdess: UAR=0.512 ravdess_snr10: UAR=0.465 ravdess_snr0: UAR=0.363
+[baseline_bilstm_aug ravdess8_spk kat 4] 41 epoch, 732.0 sn | ravdess: UAR=0.488 ravdess_snr10: UAR=0.469 ravdess_snr0: UAR=0.320
+[baseline_bilstm_aug ravdess8_spk kat 5] 45 epoch, 826.4 sn | ravdess: UAR=0.539 ravdess_snr10: UAR=0.449 ravdess_snr0: UAR=0.332

@@ -1,0 +1,6 @@
+[wavlm_large_frozen_wls ravdess8_rnd kat 0] 69 epoch | ravdess: UAR=0.902
+[wavlm_large_frozen_wls ravdess8_rnd kat 1] 42 epoch | ravdess: UAR=0.910
+[wavlm_large_frozen_wls ravdess8_rnd kat 2] 80 epoch | ravdess: UAR=0.918
+[wavlm_large_frozen_wls ravdess8_rnd kat 3] 69 epoch | ravdess: UAR=0.934
+[wavlm_large_frozen_wls ravdess8_rnd kat 4] 93 epoch | ravdess: UAR=0.918
+[wavlm_large_frozen_wls ravdess8_rnd kat 5] 64 epoch | ravdess: UAR=0.914

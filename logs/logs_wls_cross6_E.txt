@@ -1,0 +1,5 @@
+[wavlm_large_frozen_wls cross6_E kat 0] 33 epoch | ravdess: UAR=0.620 emodb: UAR=0.941
+[wavlm_large_frozen_wls cross6_E kat 1] 33 epoch | ravdess: UAR=0.521 emodb: UAR=0.863
+[wavlm_large_frozen_wls cross6_E kat 2] 36 epoch | ravdess: UAR=0.521 emodb: UAR=0.904
+[wavlm_large_frozen_wls cross6_E kat 3] 34 epoch | ravdess: UAR=0.568 emodb: UAR=0.983
+[wavlm_large_frozen_wls cross6_E kat 4] 37 epoch | ravdess: UAR=0.562 emodb: UAR=0.882

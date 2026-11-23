@@ -1,0 +1,6 @@
+[wavlm_large_frozen_wls_aug ravdess8_spk kat 0] 49 epoch | ravdess: UAR=0.855 ravdess_snr10: UAR=0.809 ravdess_snr0: UAR=0.453
+[wavlm_large_frozen_wls_aug ravdess8_spk kat 1] 43 epoch | ravdess: UAR=0.895 ravdess_snr10: UAR=0.840 ravdess_snr0: UAR=0.543
+[wavlm_large_frozen_wls_aug ravdess8_spk kat 2] 66 epoch | ravdess: UAR=0.789 ravdess_snr10: UAR=0.715 ravdess_snr0: UAR=0.277
+[wavlm_large_frozen_wls_aug ravdess8_spk kat 3] 45 epoch | ravdess: UAR=0.750 ravdess_snr10: UAR=0.688 ravdess_snr0: UAR=0.258
+[wavlm_large_frozen_wls_aug ravdess8_spk kat 4] 44 epoch | ravdess: UAR=0.719 ravdess_snr10: UAR=0.633 ravdess_snr0: UAR=0.371
+[wavlm_large_frozen_wls_aug ravdess8_spk kat 5] 46 epoch | ravdess: UAR=0.773 ravdess_snr10: UAR=0.789 ravdess_snr0: UAR=0.656

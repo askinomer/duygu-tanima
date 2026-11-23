@@ -1,0 +1,71 @@
+Loading weights:   0%|          | 0/487 [00:00<?, ?it/s]Loading weights: 100%|██████████| 487/487 [00:00<00:00, 5024.08it/s]
+[clean] 100/1975  5.3 dk
+[clean] 200/1975  10.7 dk
+[clean] 300/1975  12.0 dk
+Loading weights:   0%|          | 0/487 [00:00<?, ?it/s]Loading weights: 100%|██████████| 487/487 [00:00<00:00, 30905.80it/s]
+[clean] 400/1975  2.1 dk
+[clean] 500/1975  4.0 dk
+[clean] 600/1975  5.8 dk
+[clean] 700/1975  7.6 dk
+[clean] 800/1975  9.2 dk
+[clean] 900/1975  10.9 dk
+[clean] 1000/1975  12.6 dk
+[clean] 1100/1975  14.4 dk
+[clean] 1200/1975  16.4 dk
+[clean] 1300/1975  18.3 dk
+[clean] 1400/1975  20.0 dk
+[clean] 1500/1975  22.1 dk
+[clean] 1600/1975  24.6 dk
+[clean] 1700/1975  27.0 dk
+[clean] 1800/1975  29.4 dk
+[clean] 1900/1975  31.8 dk
+[clean] 1975/1975  33.7 dk
+Yazıldı: ./data/features/wavlm_large/clean.npz  pooled=(1975, 25, 2048)
+[snr10] 100/1440  3.1 dk
+[snr10] 200/1440  7.5 dk
+[snr10] 300/1440  11.5 dk
+[snr10] 400/1440  18.3 dk
+[snr10] 500/1440  22.1 dk
+[snr10] 600/1440  24.9 dk
+[snr10] 700/1440  27.6 dk
+[snr10] 800/1440  30.1 dk
+[snr10] 900/1440  32.9 dk
+[snr10] 1000/1440  35.5 dk
+[snr10] 1100/1440  38.3 dk
+[snr10] 1200/1440  41.5 dk
+[snr10] 1300/1440  44.4 dk
+[snr10] 1400/1440  47.1 dk
+[snr10] 1440/1440  48.3 dk
+Yazıldı: ./data/features/wavlm_large/snr10.npz  pooled=(1440, 25, 2048)
+[snr0] 100/1440  2.6 dk
+[snr0] 200/1440  5.4 dk
+[snr0] 300/1440  8.0 dk
+[snr0] 400/1440  10.8 dk
+[snr0] 500/1440  13.0 dk
+[snr0] 600/1440  14.8 dk
+[snr0] 700/1440  16.5 dk
+[snr0] 800/1440  18.1 dk
+[snr0] 900/1440  19.9 dk
+[snr0] 1000/1440  21.7 dk
+[snr0] 1100/1440  23.5 dk
+[snr0] 1200/1440  25.5 dk
+[snr0] 1300/1440  27.5 dk
+[snr0] 1400/1440  29.2 dk
+[snr0] 1440/1440  30.0 dk
+Yazıldı: ./data/features/wavlm_large/snr0.npz  pooled=(1440, 25, 2048)
+[aug1] 100/1440  1.9 dk
+[aug1] 200/1440  3.8 dk
+[aug1] 300/1440  5.6 dk
+[aug1] 400/1440  7.6 dk
+[aug1] 500/1440  9.4 dk
+[aug1] 600/1440  11.2 dk
+[aug1] 700/1440  13.1 dk
+[aug1] 800/1440  14.7 dk
+[aug1] 900/1440  16.6 dk
+[aug1] 1000/1440  18.3 dk
+[aug1] 1100/1440  20.2 dk
+[aug1] 1200/1440  22.3 dk
+[aug1] 1300/1440  24.1 dk
+[aug1] 1400/1440  25.8 dk
+[aug1] 1440/1440  26.6 dk
+Yazıldı: ./data/features/wavlm_large/aug1.npz  pooled=(1440, 25, 2048)

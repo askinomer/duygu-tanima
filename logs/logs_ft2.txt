@@ -1,0 +1,196 @@
+Loading weights:   0%|          | 0/487 [00:00<?, ?it/s]Loading weights:  96%|█████████▌| 468/487 [00:00<00:00, 4679.60it/s]Loading weights: 100%|██████████| 487/487 [00:00<00:00, 4746.26it/s]
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 0 epoch 1: kayıp=2.003 val UAR=0.484 (361 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 0 epoch 2: kayıp=1.327 val UAR=0.578 (170 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 0 epoch 3: kayıp=0.937 val UAR=0.695 (120 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 0 epoch 4: kayıp=0.732 val UAR=0.719 (118 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 0 epoch 5: kayıp=0.578 val UAR=0.719 (114 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 0 epoch 6: kayıp=0.475 val UAR=0.746 (114 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 0 epoch 7: kayıp=0.403 val UAR=0.746 (113 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 0 epoch 8: kayıp=0.336 val UAR=0.770 (116 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 0 epoch 9: kayıp=0.304 val UAR=0.777 (115 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 0 epoch 10: kayıp=0.284 val UAR=0.773 (115 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+[wavlm_large_ft2 ravdess8_spk kat 0] 10 epoch, 1463 sn | ravdess: UAR=0.758
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 1 epoch 1: kayıp=1.996 val UAR=0.312 (117 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 1 epoch 2: kayıp=1.310 val UAR=0.602 (120 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 1 epoch 3: kayıp=0.929 val UAR=0.656 (121 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 1 epoch 4: kayıp=0.710 val UAR=0.691 (118 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 1 epoch 5: kayıp=0.573 val UAR=0.660 (118 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 1 epoch 6: kayıp=0.470 val UAR=0.707 (117 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 1 epoch 7: kayıp=0.394 val UAR=0.699 (119 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 1 epoch 8: kayıp=0.343 val UAR=0.730 (116 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 1 epoch 9: kayıp=0.291 val UAR=0.707 (116 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 1 epoch 10: kayıp=0.274 val UAR=0.723 (113 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+[wavlm_large_ft2 ravdess8_spk kat 1] 10 epoch, 1185 sn | ravdess: UAR=0.797
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 2 epoch 1: kayıp=1.990 val UAR=0.395 (118 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 2 epoch 2: kayıp=1.317 val UAR=0.574 (121 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 2 epoch 3: kayıp=0.835 val UAR=0.574 (126 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 2 epoch 4: kayıp=0.630 val UAR=0.648 (122 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 2 epoch 5: kayıp=0.504 val UAR=0.621 (123 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 2 epoch 6: kayıp=0.406 val UAR=0.668 (125 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 2 epoch 7: kayıp=0.344 val UAR=0.617 (121 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 2 epoch 8: kayıp=0.299 val UAR=0.652 (118 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 2 epoch 9: kayıp=0.273 val UAR=0.672 (118 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 2 epoch 10: kayıp=0.247 val UAR=0.648 (113 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+[wavlm_large_ft2 ravdess8_spk kat 2] 10 epoch, 1213 sn | ravdess: UAR=0.707
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 3 epoch 1: kayıp=1.992 val UAR=0.496 (112 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 3 epoch 2: kayıp=1.248 val UAR=0.566 (124 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 3 epoch 3: kayıp=0.823 val UAR=0.609 (121 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 3 epoch 4: kayıp=0.626 val UAR=0.562 (115 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 3 epoch 5: kayıp=0.508 val UAR=0.656 (119 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 3 epoch 6: kayıp=0.402 val UAR=0.613 (119 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 3 epoch 7: kayıp=0.326 val UAR=0.656 (121 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 3 epoch 8: kayıp=0.279 val UAR=0.676 (123 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 3 epoch 9: kayıp=0.243 val UAR=0.668 (115 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 3 epoch 10: kayıp=0.221 val UAR=0.668 (115 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+[wavlm_large_ft2 ravdess8_spk kat 3] 10 epoch, 1190 sn | ravdess: UAR=0.641
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 4 epoch 1: kayıp=1.991 val UAR=0.496 (115 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 4 epoch 2: kayıp=1.313 val UAR=0.582 (116 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 4 epoch 3: kayıp=0.867 val UAR=0.648 (116 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 4 epoch 4: kayıp=0.659 val UAR=0.648 (115 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 4 epoch 5: kayıp=0.523 val UAR=0.656 (117 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 4 epoch 6: kayıp=0.408 val UAR=0.645 (115 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 4 epoch 7: kayıp=0.350 val UAR=0.656 (115 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 4 epoch 8: kayıp=0.298 val UAR=0.684 (113 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 4 epoch 9: kayıp=0.263 val UAR=0.688 (114 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 4 epoch 10: kayıp=0.245 val UAR=0.672 (119 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+[wavlm_large_ft2 ravdess8_spk kat 4] 10 epoch, 1163 sn | ravdess: UAR=0.699
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 5 epoch 1: kayıp=1.986 val UAR=0.344 (114 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 5 epoch 2: kayıp=1.329 val UAR=0.637 (118 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 5 epoch 3: kayıp=0.928 val UAR=0.684 (113 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 5 epoch 4: kayıp=0.725 val UAR=0.703 (119 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 5 epoch 5: kayıp=0.588 val UAR=0.699 (117 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 5 epoch 6: kayıp=0.482 val UAR=0.781 (119 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 5 epoch 7: kayıp=0.412 val UAR=0.773 (122 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 5 epoch 8: kayıp=0.351 val UAR=0.770 (112 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+  kat 5 epoch 9: kayıp=0.308 val UAR=0.770 (113 sn)
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:6829: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+[wavlm_large_ft2 ravdess8_spk kat 5] 9 epoch, 1056 sn | ravdess: UAR=0.688

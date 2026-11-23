@@ -1,0 +1,38 @@
+BAŞLIK
+Konuşmadan Duygu Tanıma – Ses İşleme Dönem Projesi (2026-2027)
+
+AÇIKLAMA
+Ses İşleme dersi 2026-2027 dönem projesi, Konu 8: Konuşmadan Duygu Tanıma.
+Hazırlayanlar: Ömer Faruk Aşkın (23181616758), Göktuğ Ercedoğan (21181616014)
+
+Önceden eğitilmiş WavLM-Large modelini, log-Mel tabanlı klasik bir CNN-BiLSTM modeliyle RAVDESS (İngilizce) ve EmoDB (Almanca) veri setlerinde, konuşmacıdan bağımsız 6 katlı çapraz doğrulamayla karşılaştırdık. Dondurulmuş WavLM 8 sınıfta %79,2 UAR'a ulaştı (baseline %43,5). Konuşmacıları karıştıran rastgele bölme sonuçları 12-26 puan şişirdi; veri setleri arasında 26-33 puanlık düşüş görüldü ve iki veri setiyle birlikte eğitim bu açığı kapattı.
+
+Bölümler
+0:00 Giriş
+0:25 Problem tanımı
+1:25 Veri setleri ve değerlendirme protokolü
+2:37 Modeller ve yöntem
+4:02 Deneysel sonuçlar
+4:47 Katman analizi
+5:16 Konuşmacı sızıntısı
+5:43 Veri setleri arası genelleme
+6:22 Gürültüye dayanıklılık
+6:51 Hata analizi
+7:28 Demo
+8:59 Sonuç ve değerlendirme
+9:52 Kaynaklar ve lisanslar
+
+Kaynaklar ve lisanslar
+- RAVDESS: S. R. Livingstone ve F. A. Russo, "The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)", PLoS ONE 13(5): e0196391, 2018. https://doi.org/10.1371/journal.pone.0196391 · Lisans: CC BY-NC-SA 4.0. Demodaki ses örnekleri RAVDESS'in 21 ve 22 numaralı oyuncularına aittir.
+- EmoDB: F. Burkhardt vd., "A database of German emotional speech", Interspeech 2005; F. Burkhardt vd., "EmoDB 2.0", Interspeech 2025.
+- WavLM-Large: S. Chen vd., "WavLM: Large-scale self-supervised pre-training for full stack speech processing", IEEE JSTSP, 2022. https://doi.org/10.1109/JSTSP.2022.3188113 · Microsoft.
+- Seslendirme: Anlatım yapay sestir. Piper TTS (https://github.com/OHF-Voice/piper1-gpl) ve tr_TR-dfki-medium sesiyle üretildi. Ses modeli DFKI MaryTTS Türkçe ses verisiyle eğitilmiştir (https://github.com/marytts/dfki-ot-data, CC BY-NC-SA 4.0).
+- Yazı tipi: IBM Plex Sans, SIL Open Font License 1.1. Demo arayüzü: Gradio.
+
+Bu video ticari olmayan eğitim amacıyla hazırlanmıştır ve CC BY-NC-SA 4.0 lisansıyla paylaşılmaktadır.
+
+YÜKLEME AYARLARI
+- Görünürlük: Liste dışı (bağlantıya sahip olan izleyebilir, aramada çıkmaz)
+- Kitle: Hayır, çocuklar için yapılmadı
+- Altyazı: Konusmadan_Duygu_Tanima_Video.srt dosyasını Türkçe altyazı olarak yükle (YouTube Studio > Altyazılar > Dil: Türkçe > Dosya yükle > Zamanlamalı)
+- Yükledikten sonra "Paylaş" bağlantısını kopyalayıp teslimde Oğuzhan hocaya gönder.

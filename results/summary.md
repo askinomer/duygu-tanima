@@ -1,0 +1,29 @@
+| Deney | Model | Test | Kat | Accuracy (%) | UAR (%) | Macro-F1 (%) |
+|---|---|---|---|---|---|---|
+| cross6_E | baseline_bilstm | emodb | 5 | 64.9 ± 10.5 | 62.0 ± 12.7 | 60.6 ± 11.7 |
+| cross6_E | baseline_bilstm | ravdess | 5 | 27.2 ± 5.1 | 24.9 ± 4.7 | 18.8 ± 5.4 |
+| cross6_E | wavlm_large_frozen_wls | emodb | 5 | 92.6 ± 4.1 | 91.5 ± 4.8 | 90.0 ± 5.3 |
+| cross6_E | wavlm_large_frozen_wls | ravdess | 5 | 54.4 ± 2.8 | 55.8 ± 4.1 | 54.1 ± 3.1 |
+| cross6_R | baseline_bilstm | emodb | 5 | 28.0 ± 5.4 | 16.7 ± 1.3 | 8.2 ± 1.8 |
+| cross6_R | baseline_bilstm | ravdess | 5 | 48.8 ± 4.9 | 49.3 ± 6.3 | 46.2 ± 5.3 |
+| cross6_R | wavlm_large_frozen_wls | emodb | 5 | 62.0 ± 9.6 | 58.4 ± 9.6 | 56.6 ± 11.9 |
+| cross6_R | wavlm_large_frozen_wls | ravdess | 5 | 81.6 ± 6.0 | 81.8 ± 5.7 | 80.9 ± 5.8 |
+| cross6_RE | baseline_bilstm | emodb | 5 | 67.6 ± 7.5 | 61.3 ± 7.8 | 62.0 ± 7.8 |
+| cross6_RE | baseline_bilstm | ravdess | 5 | 52.0 ± 7.6 | 51.9 ± 7.9 | 50.1 ± 7.7 |
+| cross6_RE | wavlm_large_frozen_wls | emodb | 5 | 96.1 ± 3.4 | 95.1 ± 4.7 | 94.2 ± 4.3 |
+| cross6_RE | wavlm_large_frozen_wls | ravdess | 5 | 82.6 ± 5.8 | 82.7 ± 5.4 | 82.2 ± 5.8 |
+| ravdess8_rnd | baseline_bilstm | ravdess | 6 | 69.9 ± 5.8 | 69.9 ± 5.7 | 68.8 ± 6.3 |
+| ravdess8_rnd | wavlm_large_frozen_wls | ravdess | 6 | 91.5 ± 0.9 | 91.6 ± 1.0 | 91.3 ± 0.8 |
+| ravdess8_spk | baseline_bilstm | ravdess | 6 | 44.3 ± 4.8 | 43.5 ± 4.8 | 41.2 ± 5.3 |
+| ravdess8_spk | baseline_bilstm | ravdess_snr0 | 6 | 14.6 ± 1.1 | 13.7 ± 1.0 | 5.5 ± 2.1 |
+| ravdess8_spk | baseline_bilstm | ravdess_snr10 | 6 | 18.5 ± 3.8 | 17.3 ± 3.5 | 10.5 ± 4.9 |
+| ravdess8_spk | baseline_bilstm_aug | ravdess | 6 | 52.8 ± 7.1 | 53.0 ± 8.2 | 50.3 ± 8.4 |
+| ravdess8_spk | baseline_bilstm_aug | ravdess_snr0 | 6 | 34.9 ± 6.5 | 36.1 ± 6.3 | 31.6 ± 6.4 |
+| ravdess8_spk | baseline_bilstm_aug | ravdess_snr10 | 6 | 47.1 ± 7.4 | 47.9 ± 8.0 | 44.8 ± 8.0 |
+| ravdess8_spk | wavlm_large_frozen_wls | ravdess | 6 | 79.1 ± 6.1 | 79.2 ± 6.2 | 78.6 ± 6.3 |
+| ravdess8_spk | wavlm_large_frozen_wls | ravdess_snr0 | 6 | 24.4 ± 4.8 | 27.9 ± 3.9 | 16.9 ± 5.4 |
+| ravdess8_spk | wavlm_large_frozen_wls | ravdess_snr10 | 6 | 60.4 ± 4.6 | 61.9 ± 5.2 | 59.3 ± 5.0 |
+| ravdess8_spk | wavlm_large_frozen_wls_aug | ravdess | 6 | 79.5 ± 6.8 | 79.7 ± 6.6 | 79.0 ± 7.0 |
+| ravdess8_spk | wavlm_large_frozen_wls_aug | ravdess_snr0 | 6 | 43.9 ± 15.8 | 42.6 ± 15.5 | 42.1 ± 16.9 |
+| ravdess8_spk | wavlm_large_frozen_wls_aug | ravdess_snr10 | 6 | 74.7 ± 7.7 | 74.5 ± 8.0 | 74.4 ± 7.8 |
+| ravdess8_spk | wavlm_large_ft2 | ravdess | 6 | 71.0 ± 5.7 | 71.5 ± 5.5 | 70.6 ± 6.1 |

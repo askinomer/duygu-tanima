@@ -1,0 +1,7 @@
+Dalga biçimleri ve log-Mel özellikleri yükleniyor...
+Hazır: 1975 kayıt. Eğitim başlıyor.
+[baseline_bilstm cross6_R kat 0] 43 epoch, 442.7 sn | ravdess: UAR=0.547 emodb: UAR=0.167
+[baseline_bilstm cross6_R kat 1] 28 epoch, 282.7 sn | ravdess: UAR=0.495 emodb: UAR=0.185
+[baseline_bilstm cross6_R kat 2] 30 epoch, 304.0 sn | ravdess: UAR=0.385 emodb: UAR=0.147
+[baseline_bilstm cross6_R kat 3] 25 epoch, 242.5 sn | ravdess: UAR=0.531 emodb: UAR=0.167
+[baseline_bilstm cross6_R kat 4] 20 epoch, 198.5 sn | ravdess: UAR=0.505 emodb: UAR=0.167

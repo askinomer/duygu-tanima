@@ -1,0 +1,11 @@
+torch>=2.5
+torchaudio>=2.5
+transformers>=4.45
+librosa>=0.10.2
+soundfile>=0.12
+scikit-learn>=1.5
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.9
+gradio>=4.44
+scipy>=1.11

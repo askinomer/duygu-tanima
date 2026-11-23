@@ -1,0 +1,693 @@
+1
+00:00:00,350 --> 00:00:04,298
+Merhaba, bu videoda Ses İşleme dersi dönem
+projemizi anlatıyoruz:
+
+2
+00:00:04,318 --> 00:00:05,763
+konuşmadan duygu tanıma.
+
+3
+00:00:06,103 --> 00:00:10,628
+Amacımız, kısa bir ses kaydından konuşanın
+duygusunu tahmin eden bir sistem
+
+4
+00:00:10,648 --> 00:00:15,718
+geliştirmek ve önceden eğitilmiş büyük bir
+konuşma modelini klasik bir yöntemle adil
+
+5
+00:00:15,738 --> 00:00:17,415
+koşullarda karşılaştırmaktı.
+
+6
+00:00:17,755 --> 00:00:21,701
+Video dört bölümden oluşuyor: problemin
+tanımı, yöntem ve modeller,
+
+7
+00:00:21,721 --> 00:00:24,956
+deneysel sonuçlar ile demo ve son olarak
+değerlendirme.
+
+8
+00:00:25,883 --> 00:00:27,791
+Öncelikle problemi tanımlayalım.
+
+9
+00:00:28,131 --> 00:00:31,684
+Konuşmadan duygu tanıma, bir ses
+kaydındaki perde, enerji,
+
+10
+00:00:31,704 --> 00:00:36,427
+konuşma hızı ve ses rengi gibi
+ipuçlarından konuşanın duygusunu
+sınıflandırma
+
+11
+00:00:36,447 --> 00:00:37,166
+problemidir.
+
+12
+00:00:37,506 --> 00:00:39,638
+Çağrı merkezleri, sesli asistanlar,
+
+13
+00:00:39,658 --> 00:00:43,082
+eğitim ve sağlık uygulamaları başlıca
+kullanım alanları.
+
+14
+00:00:43,422 --> 00:00:47,479
+Ancak problem zor: aynı duyguyu herkes
+farklı seslendirir; dil,
+
+15
+00:00:47,500 --> 00:00:50,392
+kültür ve kayıt koşulları da sesi
+değiştirir.
+
+16
+00:00:50,732 --> 00:00:55,216
+Üstelik etiketli veri setleri küçüktür ve
+çoğu oyuncu kayıtlarından oluşur.
+
+17
+00:00:55,556 --> 00:01:00,824
+Son yıllarda, etiketsiz on binlerce
+saatlik konuşmayla önceden eğitilen
+modeller bu
+
+18
+00:01:00,844 --> 00:01:02,735
+alanda büyük ilerleme sağladı.
+
+19
+00:01:03,075 --> 00:01:05,516
+Biz bu projede üç soruya cevap aradık.
+
+20
+00:01:05,856 --> 00:01:08,720
+Birincisi: önceden eğitilmiş WavLM modeli,
+
+21
+00:01:08,740 --> 00:01:12,291
+klasik log-Mel yöntemine göre ne kadar
+kazandırıyor?
+
+22
+00:01:12,631 --> 00:01:17,070
+İkincisi: konuşmacıları eğitim ve test
+arasında karıştıran rastgele bir bölme,
+
+23
+00:01:17,090 --> 00:01:18,671
+başarıyı ne kadar şişiriyor?
+
+24
+00:01:19,011 --> 00:01:21,530
+Üçüncüsü: bir veri setinde eğitilen model,
+
+25
+00:01:21,550 --> 00:01:24,553
+başka dildeki bir veri setinde ne kadar
+çalışıyor?
+
+26
+00:01:25,483 --> 00:01:27,878
+İki herkese açık veri seti kullandık.
+
+27
+00:01:28,218 --> 00:01:31,899
+RAVDESS'te on ikisi kadın, on ikisi erkek
+24 oyuncu,
+
+28
+00:01:31,919 --> 00:01:36,952
+iki İngilizce cümleyi 8 duyguyla
+seslendiriyor; toplam 1.440 kayıt var.
+
+29
+00:01:37,292 --> 00:01:42,264
+EmoDB'de ise 10 Alman oyuncu, 7 duyguda
+535 kayıt üretmiş.
+
+30
+00:01:42,604 --> 00:01:47,443
+Tüm kayıtları 16 kilohertz tek kanala
+çevirdik ve baştaki ve sondaki sessizliği
+
+31
+00:01:47,462 --> 00:01:50,456
+kırptık; kayıtların çoğu 1 ile 3 saniye
+arasında.
+
+32
+00:01:50,796 --> 00:01:55,926
+Sınıflar dengesiz olabildiği için ana
+ölçüt olarak ağırlıksız ortalama
+duyarlılığı,
+
+33
+00:01:55,946 --> 00:01:57,788
+kısaca UAR değerini kullandık.
+
+34
+00:01:58,717 --> 00:02:02,505
+Değerlendirmede en çok dikkat ettiğimiz
+konu konuşmacı ayrımıydı.
+
+35
+00:02:02,845 --> 00:02:08,514
+24 oyuncuyu dörder kişilik 6 kata böldük;
+her katta iki kadın ve iki erkek var.
+
+36
+00:02:08,854 --> 00:02:12,548
+Her turda bir kat test, bir kat doğrulama
+için ayrılıyor;
+
+37
+00:02:12,568 --> 00:02:14,894
+kalan 16 oyuncuyla model eğitiliyor.
+
+38
+00:02:15,234 --> 00:02:19,254
+Böylece model, sesini hiç duymadığı
+kişiler üzerinde ölçülüyor.
+
+39
+00:02:19,594 --> 00:02:24,348
+Sızıntının etkisini ölçmek için
+konuşmacıları karıştıran rastgele bir
+bölme de
+
+40
+00:02:24,368 --> 00:02:24,776
+yaptık.
+
+41
+00:02:25,116 --> 00:02:29,894
+Çapraz veri seti deneyinde ise ortak altı
+sınıfta bir setle eğitip diğerinde test
+
+42
+00:02:29,914 --> 00:02:32,619
+ettik; iki setle birlikte eğitmeyi de
+denedik.
+
+43
+00:02:32,959 --> 00:02:37,026
+Sekiz sınıfta UAR için şans düzeyi %12,5.
+
+44
+00:02:37,950 --> 00:02:41,785
+Üç modeli aynı veri ve aynı katlar
+üzerinde karşılaştırdık.
+
+45
+00:02:42,125 --> 00:02:47,739
+Birincisi, klasik baseline modeli: log-Mel
+spektrogram üzerinde iki evrişim katmanı,
+
+46
+00:02:47,759 --> 00:02:51,160
+iki katmanlı çift yönlü LSTM ve dikkat
+havuzlaması.
+
+47
+00:02:51,500 --> 00:02:54,617
+İkincisi, Microsoft'un WavLM-Large modeli:
+
+48
+00:02:54,637 --> 00:03:00,815
+94 bin saatlik etiketsiz konuşmayla
+önceden eğitilmiş, 24 katmanlı bir
+transformer.
+
+49
+00:03:01,155 --> 00:03:05,510
+WavLM'i değiştirmeden her kayıt için 25
+katmanın çıktısını alıyor,
+
+50
+00:03:05,530 --> 00:03:09,355
+zaman ekseninde ortalama ve standart
+sapmayla özetliyoruz.
+
+51
+00:03:09,695 --> 00:03:13,755
+Ardından katmanların önemini öğrenen bir
+ağırlıklı toplam ve küçük bir
+
+52
+00:03:13,775 --> 00:03:15,271
+sınıflandırıcı eğitiyoruz.
+
+53
+00:03:15,611 --> 00:03:20,543
+Üçüncüsü kısmi ince ayar, yani fine-tune:
+ilk 22 katman dondurulmuş kalıyor;
+
+54
+00:03:20,563 --> 00:03:23,996
+son iki katman sınıflandırıcıyla birlikte
+eğitiliyor.
+
+55
+00:03:24,336 --> 00:03:28,566
+Şemada mavi kutular dondurulmuş, turuncu
+kutular eğitilen kısımlar.
+
+56
+00:03:29,517 --> 00:03:33,524
+Projeyi GPU olmadan, yalnızca iki işlemci
+çekirdeğiyle yürüttük;
+
+57
+00:03:33,544 --> 00:03:36,230
+bu yüzden hesabı akıllıca bölmemiz
+gerekti.
+
+58
+00:03:36,570 --> 00:03:42,242
+WavLM'in dondurulmuş kısmının çıktısını
+her kayıt için bir kez hesaplayıp
+sakladık;
+
+59
+00:03:42,262 --> 00:03:45,328
+bu, kayıt başına yaklaşık 0,7 saniye
+sürüyor.
+
+60
+00:03:45,668 --> 00:03:49,993
+Böylece sınıflandırıcının eğitimi kat
+başına yarım dakikaya indi;
+
+61
+00:03:50,013 --> 00:03:53,403
+baseline ise kat başına 5 ile 18 dakikada
+eğitildi.
+
+62
+00:03:53,743 --> 00:03:58,539
+Kısmi fine-tune için de alt 22 katmanın
+çıktısını önbelleğe aldık ve bu kısayolun
+
+63
+00:03:58,559 --> 00:04:02,106
+tam modelle aynı sonucu verdiğini sayısal
+olarak doğruladık.
+
+64
+00:04:03,050 --> 00:04:04,864
+Şimdi ana sonuçlara geçelim.
+
+65
+00:04:05,204 --> 00:04:12,629
+Konuşmacıdan bağımsız testte baseline
+%43,5 UAR elde ediyor. Dondurulmuş WavLM
+ise
+
+66
+00:04:12,649 --> 00:04:14,263
+%79,2'ye ulaşıyor.
+
+67
+00:04:14,603 --> 00:04:19,367
+Aradaki 35,7 puanlık fark, altı katın
+altısında da aynı yönde.
+
+68
+00:04:19,707 --> 00:04:26,340
+Üst iki katmanı fine-tune ettiğimiz model
+%71,5'te kaldı: baseline'dan 28 puan iyi,
+
+69
+00:04:26,360 --> 00:04:29,787
+ama dondurulmuş modelin 7,7 puan
+gerisinde.
+
+70
+00:04:30,127 --> 00:04:34,594
+Nedenini bir sonraki grafikte göreceğiz:
+duygu bilgisi orta katmanlarda;
+
+71
+00:04:34,614 --> 00:04:39,767
+biz ise yalnızca en üstteki iki katmanı,
+sınırlı bir bütçeyle 10 epoch eğitebildik.
+
+72
+00:04:40,107 --> 00:04:43,967
+Veri artırmayla eğitilen baseline da %53'e
+çıkıyor,
+
+73
+00:04:43,987 --> 00:04:46,705
+ama WavLM'in hâlâ 26 puan gerisinde.
+
+74
+00:04:47,650 --> 00:04:50,695
+Peki duygu bilgisi WavLM'in hangi
+katmanlarında?
+
+75
+00:04:51,035 --> 00:04:55,738
+Bunu görmek için her katmanın çıktısı
+üzerinde ayrı bir doğrusal sınıflandırıcı
+
+76
+00:04:55,758 --> 00:04:56,216
+eğittik.
+
+77
+00:04:56,556 --> 00:05:01,427
+Başarı dokuzuncu katmanda %81 ile en
+yüksek değerine ulaşıyor,
+
+78
+00:05:01,447 --> 00:05:03,793
+son katmanda ise %74'e iniyor.
+
+79
+00:05:04,133 --> 00:05:08,896
+Ağırlıklı toplamın öğrendiği ağırlıklar da
+orta katmanları hafifçe öne çıkarıyor.
+
+80
+00:05:09,236 --> 00:05:14,294
+Bu bulgu, yalnızca en üst katmanları
+eğiten kısmi fine-tune modelinin neden
+geride
+
+81
+00:05:14,314 --> 00:05:15,532
+kaldığını açıklıyor.
+
+82
+00:05:16,483 --> 00:05:18,809
+İkinci sorumuz konuşmacı sızıntısıydı.
+
+83
+00:05:19,149 --> 00:05:24,742
+Konuşmacıları karıştıran rastgele bölmede
+başarı, baseline'da 26,4,
+
+84
+00:05:24,762 --> 00:05:27,256
+WavLM'de 12,4 puan yükseliyor.
+
+85
+00:05:27,596 --> 00:05:31,785
+Çünkü test edilen kişinin başka kayıtları
+eğitimde de bulunuyor ve model,
+
+86
+00:05:31,805 --> 00:05:34,379
+duygunun yanında kişiyi de tanımaya
+başlıyor.
+
+87
+00:05:34,719 --> 00:05:39,725
+Bu yüzden literatürde RAVDESS için
+bildirilen %90'ın üzerindeki sonuçlarda
+hangi
+
+88
+00:05:39,745 --> 00:05:42,803
+bölmenin kullanıldığına mutlaka bakmak
+gerekiyor.
+
+89
+00:05:43,750 --> 00:05:46,098
+Üçüncü sorumuz ise genelleme yeteneği.
+
+90
+00:05:46,438 --> 00:05:52,992
+Ortak altı sınıfta RAVDESS ile eğitilen
+WavLM, Almanca EmoDB'de %58,4'e düşüyor;
+bu,
+
+91
+00:05:53,012 --> 00:05:57,610
+EmoDB'nin kendi verisiyle eğitilen modelin
+33 puan altında.
+
+92
+00:05:57,950 --> 00:06:00,949
+Ters yönde de 26 puanlık bir düşüş var.
+
+93
+00:06:01,289 --> 00:06:06,332
+Baseline ise RAVDESS'ten EmoDB'ye geçerken
+tamamen çöküyor ve şans düzeyinde
+
+94
+00:06:06,352 --> 00:06:06,865
+kalıyor.
+
+95
+00:06:07,205 --> 00:06:12,679
+İki veri setiyle birlikte eğittiğimizde
+ise model, RAVDESS'te %82,7,
+
+96
+00:06:12,699 --> 00:06:17,123
+EmoDB'de %95,1 ile ikisinde de en iyi
+sonucunu veriyor.
+
+97
+00:06:17,463 --> 00:06:21,484
+Yani genelleme için eğitim verisinin
+çeşitliliği çok belirleyici.
+
+98
+00:06:22,417 --> 00:06:24,805
+Gerçek hayatta kayıtlar temiz değildir;
+
+99
+00:06:24,825 --> 00:06:27,830
+bu yüzden test kayıtlarına pembe gürültü
+ekledik.
+
+100
+00:06:28,170 --> 00:06:32,911
+Sinyal gürültü oranı 10 dB olduğunda
+baseline %17,3'e,
+
+101
+00:06:32,931 --> 00:06:38,553
+yani neredeyse şans düzeyine iniyor; WavLM
+ise %61,9'da kalıyor.
+
+102
+00:06:38,893 --> 00:06:45,493
+Eğitimde gürültü, hız ve ses düzeyi
+değişimleriyle veri artırma yaptığımızda
+WavLM,
+
+103
+00:06:45,513 --> 00:06:47,487
+10 dB'de %74,5'e çıkıyor.
+
+104
+00:06:47,827 --> 00:06:51,081
+Demo modelimizi de bu yüzden artırılmış
+veriyle eğittik.
+
+105
+00:06:52,017 --> 00:06:54,702
+Hatalara baktığımızda en zor sınıf üzüntü.
+
+106
+00:06:55,042 --> 00:07:01,376
+Üzgün kayıtların %64,6'sı doğru tanınıyor;
+%10'u korkmuş, %9'u sakin,
+
+107
+00:07:01,396 --> 00:07:03,218
+%8'i nötr sanılıyor.
+
+108
+00:07:03,558 --> 00:07:07,416
+Sakin, nötr ve üzgün; düşük enerjili,
+birbirine yakın duygular.
+
+109
+00:07:07,756 --> 00:07:10,685
+En kolay sınıf ise %88 ile öfke.
+
+110
+00:07:11,025 --> 00:07:16,671
+Güçlü şiddetteki kayıtlar, normal
+şiddettekilerden 7,7 puan daha kolay
+tanınıyor.
+
+111
+00:07:17,011 --> 00:07:21,046
+Kadın oyuncularda başarı %86,1, erkeklerde
+%72,4;
+
+112
+00:07:21,066 --> 00:07:27,417
+her cinsiyette yalnızca 12 oyuncu olduğu
+için bu farkı temkinli yorumluyoruz.
+
+113
+00:07:28,350 --> 00:07:29,863
+Şimdi demoya geçelim.
+
+114
+00:07:30,203 --> 00:07:32,134
+Gradio ile hazırladığımız arayüz,
+
+115
+00:07:32,154 --> 00:07:35,918
+mikrofondan kayıt alabiliyor ya da bir ses
+dosyası kabul ediyor.
+
+116
+00:07:36,258 --> 00:07:41,119
+Demo modeli, iki veri setinin ortak altı
+sınıfında veri artırmayla eğitilmiş
+
+117
+00:07:41,139 --> 00:07:42,275
+dondurulmuş WavLM.
+
+118
+00:07:43,217 --> 00:07:47,957
+Deneyeceğimiz kayıtlar, modelin eğitiminde
+kullanılmayan RAVDESS oyuncularına ait.
+
+119
+00:07:48,883 --> 00:07:53,554
+İlk kayıtta bir kadın oyuncu, İngilizce
+bir cümleyi mutlu bir tonla söylüyor.
+
+120
+00:07:59,017 --> 00:08:03,165
+Model, kaydı %99 olasılıkla mutlu olarak
+sınıflandırıyor.
+
+121
+00:08:04,117 --> 00:08:07,417
+Aynı oyuncu, aynı cümleyi bu kez öfkeyle
+söylüyor.
+
+122
+00:08:13,017 --> 00:08:15,876
+Tahmin yine doğru: %99 ile öfkeli.
+
+123
+00:08:16,817 --> 00:08:18,538
+Şimdi de üzgün bir tonla.
+
+124
+00:08:24,017 --> 00:08:28,826
+Model %82 ile üzgün diyor; ikinci sırada
+%15 ile korkmuş var.
+
+125
+00:08:29,166 --> 00:08:33,790
+Bu, hata analizinde gördüğümüz üzüntü ve
+korku karışmasının küçük bir örneği.
+
+126
+00:08:34,717 --> 00:08:39,039
+Son olarak bir erkek oyuncunun aynı
+cümleyi üzgün seslendirdiği kayıt.
+
+127
+00:08:44,950 --> 00:08:50,944
+Bu kez model yanılıyor: %80 ile mutlu
+diyor; doğru cevap olan üzgün %20'de
+kalıyor.
+
+128
+00:08:51,284 --> 00:08:55,131
+Bu örnek, hata analizindeki iki zayıflığı
+birlikte gösteriyor:
+
+129
+00:08:55,151 --> 00:08:58,810
+üzüntü en zor sınıf ve erkek oyuncularda
+başarı daha düşük.
+
+130
+00:08:59,750 --> 00:09:02,377
+Sonuç olarak üç sorumuzun cevabı şöyle.
+
+131
+00:09:02,717 --> 00:09:08,839
+Birincisi: önceden eğitilmiş WavLM klasik
+yöntemi 35,7 puan geçiyor ve dondurulmuş
+
+132
+00:09:08,859 --> 00:09:11,985
+haliyle GPU olmadan bile kullanılabiliyor.
+
+133
+00:09:12,325 --> 00:09:17,428
+İkincisi: konuşmacıları karıştıran
+bölmeler sonuçları 12 ile 26 puan arasında
+yapay
+
+134
+00:09:17,448 --> 00:09:21,686
+olarak şişiriyor; bu yüzden konuşmacıdan
+bağımsız değerlendirme şart.
+
+135
+00:09:22,026 --> 00:09:26,464
+Üçüncüsü: veri setleri arasında 26 ile 33
+puanlık bir düşüş var;
+
+136
+00:09:26,484 --> 00:09:30,156
+iki veri setiyle birlikte eğitmek bu açığı
+kapatıyor.
+
+137
+00:09:30,496 --> 00:09:33,807
+Sınırlılıklarımız: veriler oyuncu
+kayıtlarından oluşuyor,
+
+138
+00:09:33,827 --> 00:09:37,489
+Türkçe veri kullanmadık ve yalnızca kısmi
+fine-tune yapabildik.
+
+139
+00:09:37,829 --> 00:09:42,505
+Gelecekte tam fine-tune denemek, Türkçe ve
+doğal konuşma verileriyle çalışmak ve
+
+140
+00:09:42,525 --> 00:09:46,261
+emotion2vec gibi yeni modellerle
+karşılaştırma yapmak istiyoruz.
+
+141
+00:09:46,601 --> 00:09:51,129
+Kodlar, sonuçlar ve rapor proje paketinde
+yer alıyor. Dinlediğiniz için teşekkür
+
+142
+00:09:51,149 --> 00:09:51,527
+ederiz.
+
+143
+00:09:52,450 --> 00:09:57,072
+Videodaki seslendirme, açık kaynaklı Piper
+sistemiyle üretilmiş yapay bir sestir;
+
+144
+00:09:57,092 --> 00:09:59,651
+kullanılan veri setleri ve lisanslar
+ekranda.
+

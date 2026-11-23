@@ -1,0 +1,7 @@
+pretrained/
+data/raw/
+data/processed/
+data/features/
+__pycache__/
+*.pyc
+.DS_Store
